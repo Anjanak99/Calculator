@@ -19,10 +19,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      uses: actions/setup-java@v3
-      with:
-        java-version: '11'
-        distribution: 'temurin'
-    #- run: mvn clean install
-    - run: mvn clean package
-    - run: mvn test  
+    - run: mvn clean install
+    
