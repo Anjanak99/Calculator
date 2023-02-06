@@ -20,6 +20,8 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean install
+    - name: test with Maven
+      run: mvn test     
     - name: package
       run: mvn  package 
     
